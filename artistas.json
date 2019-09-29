@@ -1,3 +1,20 @@
 {
-  "artistas": []
+  "artistas": [
+    {
+      "nome": "Marcos",
+      "categoria": "Banda",
+      "ritmos": "Pagode, Samba",
+      "cidade": "RJ",
+      "telefone": "(22) 12345-1234",
+      "id": 1
+    },
+    {
+      "nome": "Lucas",
+      "categoria": "Cantor",
+      "ritmos": "Folk",
+      "cidade": "RJ",
+      "telefone": "(22) 12345-1234",
+      "id": 2
+    }
+  ]
 }

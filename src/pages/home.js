@@ -12,15 +12,15 @@ const listaArtistas = {
         for(let p of artistas){
             linhasTabelaArtistas += 
             `<tr>
-                <td>${p.id}</td>
-                <td>${p.nome}</td>
-                <td>${p.categoria}</td>
-                <td>${p.ritmos}</td>
-                <td>${p.cidade}</td>
-                <td>${p.telefone}</td>
-                <td>
-                    <button id='edit'>Editar</button>
-                    <button id='del'>Excluir</button>
+                <td scope="row">${p.id}</td>
+                <td scope="row">${p.nome}</td>
+                <td scope="row">${p.categoria}</td>
+                <td scope="row">${p.ritmos}</td>
+                <td scope="row">${p.cidade}</td>
+                <td scope="row">${p.telefone}</td>
+                <td scope="row">
+                    <button id='edit' class="btn btn-success">Editar</button>
+                    <button id='del' class="btn btn-danger">Excluir</button>
                 </td>          
             </tr>`;
         }
@@ -28,27 +28,27 @@ const listaArtistas = {
         for(let p of cidades){
             linhasTabelaCidades += 
             `<tr>
-                <td>${p.id}</td>
-                <td>${p.nome}</td>
-                <td>${p.sigla}</td>
-                <td>
-                    <button id='editCidade'>Editar</button>
-                    <button id='delCidade'>Excluir</button>
+                <td scope="row" >${p.id}</td>
+                <td scope="row" >${p.nome}</td>
+                <td scope="row" >${p.sigla}</td>
+                <td scope="row" >
+                    <button id='editCidade' class="btn btn-success" >Editar</button>
+                    <button id='delCidade' class="btn btn-danger" >Excluir</button>
                 </td>          
             </tr>`;
         }
         return `
-            <h1>Artistas</h1>
-            <table id="artistas">
+            <h3>Artistas</h3>
+            <table id="artistas" class="table">
                 <thead>
                     <tr>
-                        <th id="id" >Id</th>
-                        <th>Nome</th>
-                        <th>Sigla</th>
-                        <th>Ritmos</th>
-                        <th>Cidade</th>
-                        <th>Telefone</th>
-                        <th colspan=2>Operações</th>
+                        <th id="id" scope="col" >Id</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Sigla</th>
+                        <th scope="col">Ritmos</th>
+                        <th scope="col">Cidade</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col" colspan=2>Operações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -56,14 +56,14 @@ const listaArtistas = {
                 </tbody>
             </table>
 
-            <h1>Cidades</h1>
-            <table id="artistas">
+            <h3>Cidades</h3>
+            <table id="artistas" class="table">
                 <thead>
                     <tr>
-                        <th id="id" >Id</th>
-                        <th>Nome</th>
-                        <th>Sigla</th>
-                        <th colspan=2>Operações</th>
+                        <th scope="col" id="id" >Id</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Sigla</th>
+                        <th scope="col" colspan=2>Operações</th>
                     </tr>
                 </thead>
                 <tbody>

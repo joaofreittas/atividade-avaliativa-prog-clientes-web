@@ -1,19 +1,14 @@
 {
   "cidades": [
     {
-      "nome": "Rio de Janeiro ",
-      "sigla": "RJ",
+      "nome": "São Paulo",
+      "sigla": "SP",
       "id": 2
     },
     {
-      "nome": "Bahia",
-      "sigla": "BA",
+      "nome": "Cordeiro",
+      "sigla": "RJ",
       "id": 3
-    },
-    {
-      "nome": "Goiás",
-      "sigla": "GO",
-      "id": 4
     }
   ]
 }

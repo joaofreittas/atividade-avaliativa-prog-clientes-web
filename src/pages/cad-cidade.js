@@ -12,20 +12,26 @@ let cadastroCidade = {
 
         if( obj == undefined || obj == null || obj == "" ){
             return `
-                <button id="back-home">Home</button>
-                <h3>Cadastro de Cidades</h3>
-                <input type="text" id="nome" placeholder=" Nome ">
-                <input type="text" id="sigla" placeholder=" Sigla ">
-                <button id="btnCadastro">Cadastrar</button>
+                <button id="back-home"><i class="material-icons">home</i></button>
+                <div class="container">
+                    <h3>Cadastro de Cidades</h3>
+                    <label class="mt-3" for="nome">Nome</label>
+                    <input type="text" id="nome" class="form-control" placeholder=" Nome ">
+                    <label class="mt-3" for="sigla">Sigla</label>
+                    <input type="text" id="sigla" class="form-control" placeholder=" Sigla ">
+                    <button id="btnCadastro" class="btn btn-primary mt-3" >Cadastrar</button>
+                </div>
             `;
         }else{
             return `
-                <button id="back-home">Home</button>
-                <h3>Cadastro de Cidades</h3>
-                <input type="hidden" id="id" value="${obj.id}">
-                <input type="text" id="nome" value="${obj.nome}">
-                <input type="text" id="sigla" value="${obj.sigla}">
-                <button id="btnCadastro">Alterar</button>
+            <button id="back-home"><i class="material-icons">home</i></button>
+                <div class="container">
+                    <h3>Cadastro de Cidades</h3>
+                    <input type="hidden" id="id" value="${obj.id}">
+                    <input type="text" id="nome" value="${obj.nome}">
+                    <input type="text" id="sigla" value="${obj.sigla}">
+                    <button id="btnCadastro" class="btn btn-primary mt-3" >Alterar</button>
+                </div>
             `;
         }
     },

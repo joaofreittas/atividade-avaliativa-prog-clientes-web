@@ -21,19 +21,26 @@ let cadastroArtista = {
             }
 
             return `
-                <button id="back-home">Home</button>
-                <h3>Cadastro de Artistas</h3>
-                <input type="text" id="nome" placeholder=" Nome ">
-                <select id="categoria">
-                    <option id="opcao-banda" value="Banda">Banda</option>
-                    <option id="opcao-cantor" value="Cantor">Cantor</option>
-                </select>
-                <textarea id="ritmos"></textarea>
-                <select id="cidades">
-                    `+ cidades +`
-                </select>
-                <input type="text" id="telefone" placeholder=" Telefone ">
-                <button id="btnCadastro">Cadastrar</button>
+                <button id="back-home"><i class="material-icons">home</i></button>
+                <div class="container mt-3 w-80"> 
+                    <h3>Cadastro de Artistas</h3>
+                    <label class="mt-2" for="nome">Nome</label>
+                    <input type="text" id="nome" class="form-control" placeholder=" Nome ">
+                    <label class="mt-2" for="categoria">Categoria</label>
+                    <select id="categoria" class="custom-select">
+                        <option id="opcao-banda" value="Banda">Banda</option>
+                        <option id="opcao-cantor" value="Cantor">Cantor</option>
+                    </select>
+                    <label class="mt-2" for="ritmos">Ritmos</label>
+                    <textarea id="ritmos" class="form-control"></textarea>
+                    <label class="mt-2" for="cidades">Cidade</label>
+                    <select id="cidades" class="custom-select ">
+                        `+ cidades +`
+                    </select>
+                    <label class="mt-2" for="telefone">Telefone</label>
+                    <input type="text" id="telefone" class="form-control" placeholder=" Telefone ">
+                    <button id="btnCadastro" class="btn btn-primary mt-3">Cadastrar</button>
+                </div>
             `;    
         //para editar
         }else{
@@ -45,20 +52,28 @@ let cadastroArtista = {
                 `;
             }
             return `
-                <button id="back-home">Home</button>
-                <h3>Cadastro de Artistas</h3>
-                <input type="hidden" id="id" value="${obj.id}">
-                <input type="text" id="nome" value="${obj.nome}">
-                <select id="categoria">
-                    <option id="opcao-banda" value="Banda">Banda</option>
-                    <option id="opcao-cantor" value="Cantor">Cantor</option>
-                </select>
-                <textarea id="ritmos">${obj.ritmos}</textarea>
-                <select id="cidades">
-                    `+ cid +`
-                </select>
-                <input type="text" id="telefone" value="${obj.telefone}">
-                <button id="btnCadastro">Alterar</button>
+                <button id="back-home"><i class="material-icons">home</i></button>
+                <div class="container mt-3 w-80"> 
+                    <h3>Cadastro de Artistas</h3>
+                    <label class="mt-2" for="nome">Nome</label>
+                    <input type="hidden" id="id" value="${obj.id}">
+                    <input type="text" id="nome" class="form-control" value="${obj.nome}" placeholder=" Nome ">
+                    <label class="mt-2" for="categoria">Categoria</label>
+                    <select id="categoria" class="custom-select">
+                        <option id="opcao-banda" value="Banda">Banda</option>
+                        <option id="opcao-cantor" value="Cantor">Cantor</option>
+                    </select>
+                    <label class="mt-2" for="ritmos" >Ritmos</label>
+                    <textarea id="ritmos" class="form-control">${obj.ritmos}</textarea>
+                    <label class="mt-2" for="cidades">Cidade</label>
+                    <select id="cidades" class="custom-select ">
+                        `+ cid +`
+                    </select>
+                    <label class="mt-2" for="telefone">Telefone</label>
+                    <input type="text" id="telefone" class="form-control" value="${obj.telefone}" placeholder=" Telefone ">
+                    <button id="btnCadastro" class="btn btn-primary mt-3">Alterar</button>
+                </div>
+                
             `;
         }
         
