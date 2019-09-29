@@ -1,0 +1,19 @@
+{
+  "cidades": [
+    {
+      "nome": "Rio de Janeiro ",
+      "sigla": "RJ",
+      "id": 2
+    },
+    {
+      "nome": "Bahia",
+      "sigla": "BA",
+      "id": 3
+    },
+    {
+      "nome": "Goiás",
+      "sigla": "GO",
+      "id": 4
+    }
+  ]
+}
